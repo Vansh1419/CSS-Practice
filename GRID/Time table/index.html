@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+</head>
+<style>
+    html {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .body {
+        display: grid;
+        max-width: 70rem;
+        border: 2px solid black;
+        margin: auto;
+        /* max-height: 100vh; */
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    .items {
+        text-align: center;
+        min-width: 10px;
+        min-height: 40px;
+        /* transform: translateY(50%); */
+        border: 2px solid black;
+
+    }
+
+    .items h1 {
+        font-size: 20px;
+        /* padding: 10px; */
+        margin: 10px;
+
+    }
+
+    .item21 {
+        grid-column: 4/6;
+        grid-row: 3/5;
+    }
+
+    .item22 {
+        grid-row: span 7;
+    }
+
+    .item23,
+    .item19 {
+        grid-row: span 2;
+    }
+
+    .item47 {
+        grid-column: span 3;
+    }
+
+    .item48,
+    .item50,
+    .item51,
+    .item53,
+    .item52,
+    .item54,
+    .item24 {
+        grid-row: span 2;
+    }
+
+    .item49,
+    .item55,
+    .item25,
+    .item20,
+    .item24 {
+        grid-column: span 2;
+    }
+</style>
+
+<body>
+    <div class="body">
+        <div class="items item1">
+            <h1>class</h1>
+        </div>
+        <div class="items item2">
+            <h1>1</h1>
+        </div>
+        <div class="items item3">
+            <h1>2</h1>
+        </div>
+        <div class="items item4">
+            <h1>3</h1>
+        </div>
+        <div class="items item5">
+            <h1>4</h1>
+        </div>
+        <div class="items item6">
+            <h1>5</h1>
+        </div>
+        <div class="items item7">
+            <h1>6</h1>
+        </div>
+        <div class="items item8">
+            <h1>7</h1>
+        </div>
+        <div class="items item9">
+            <h1>8</h1>
+        </div>
+        <div class="items item10">
+            <h1>timing</h1>
+        </div>
+        <div class="items item11">
+            <h1>t1</h1>
+        </div>
+        <div class="items item12">
+            <h1>t2</h1>
+        </div>
+        <div class="items item13">
+            <h1>t3</h1>
+        </div>
+        <div class="items item14">
+            <h1>t4</h1>
+        </div>
+        <div class="items item15">
+            <h1>t5</h1>
+        </div>
+        <div class="items item16">
+            <h1>t6</h1>
+        </div>
+        <div class="items item17">
+            <h1>t7</h1>
+        </div>
+        <div class="items item18">
+            <h1>t8</h1>
+        </div>
+        <div class="items item19">
+            <h1>Monday</h1>
+        </div>
+        <div class="items item20">
+            <h1>item 20</h1>
+        </div>
+        <div class="items item21">
+            <h1>item 21</h1>
+        </div>
+        <div class="items item22">
+            <h1>LUNCH</h1>
+        </div>
+        <div class="items item23">
+            <h1>item 23</h1>
+        </div>
+        <div class="items item24">
+            <h1>item 24</h1>
+        </div>
+        <div class="items item25">
+            <h1>item 25</h1>
+        </div>
+        <div class="items item26">
+            <h1>Tuesday</h1>
+        </div>
+        <div class="items item27">
+            <h1>item 27</h1>
+        </div>
+        <div class="items item28">
+            <h1>item 28</h1>
+        </div>
+        <div class="items item29">
+            <h1>item 29</h1>
+        </div>
+        <div class="items item30">
+            <h1>item 30</h1>
+        </div>
+        <div class="items item31">
+            <h1>item 31</h1>
+        </div>
+        <div class="items item32">
+            <h1>item 32</h1>
+        </div>
+        <div class="items item33">
+            <h1>item 33</h1>
+        </div>
+        <div class="items item34">
+            <h1>Wednesday</h1>
+        </div>
+        <div class="items item35">
+            <h1>item 35</h1>
+        </div>
+        <div class="items item36">
+            <h1>item 36</h1>
+        </div>
+        <div class="items item37">
+            <h1>item 37</h1>
+        </div>
+        <div class="items item38">
+            <h1>item 38</h1>
+        </div>
+        <div class="items item39">
+            <h1>item 39</h1>
+        </div>
+        <div class="items item40">
+            <h1>item 40</h1>
+        </div>
+        <div class="items item41">
+            <h1>item 41</h1>
+        </div>
+        <div class="items item42">
+            <h1>Thrusday</h1>
+        </div>
+        <div class="items item43">
+            <h1>item 43</h1>
+        </div>
+        <div class="items item44">
+            <h1>item 44</h1>
+        </div>
+        <div class="items item45">
+            <h1>item 45</h1>
+        </div>
+        <div class="items item46">
+            <h1>item 46</h1>
+        </div>
+        <div class="items item47">
+            <h1>item 47</h1>
+        </div>
+        <div class="items item48">
+            <h1>Friday</h1>
+        </div>
+        <div class="items item49">
+            <h1>item 49</h1>
+        </div>
+        <div class="items item50">
+            <h1>item 50</h1>
+        </div>
+        <div class="items item51">
+            <h1>item 51</h1>
+        </div>
+        <div class="items item52">
+            <h1>item 52</h1>
+        </div>
+        <div class="items item53">
+            <h1>item 53</h1>
+        </div>
+        <div class="items item54">
+            <h1>item 54</h1>
+        </div>
+        <div class="items item55">
+            <h1>item 55</h1>
+        </div>
+    </div>
+</body>
+
+</html>
