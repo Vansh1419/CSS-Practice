@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <title>Truth and Dare</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">
+            <form action="names">Enter name of players
+                <input type="text" name="player1" id="player1" placeholder="Player 1 ">
+                <input type="text" name="player2" id="player2" placeholder="Player 2 ">
+                <input type="text" name="player3" id="player3" placeholder="Player 3 ">
+                <input type="text" name="player4" id="player4" placeholder="Player 4 ">
+                <label for="submit" class="submit-btn">
+                    <input type="submit" id="submit" class="spin-button" value="Submit">
+                </label>
+            </form>
+        </div>
+        <div class="item2">
+            <div class="content">
+                <div class="player player-1">player 1</div>
+                <div class="player player-2">player 2</div>
+                <div class="player player-3">player 3</div>
+                <div class="player player-4">player 4</div>
+            </div>
+            <div class="spin">
+                <div class="spin-div">
+                    <button class="spin-btn">Spin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-family: cursive;
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+        min-height: 100vh;
+    }
+
+    .item1 {
+        background-color: rgb(241, 241, 241);
+    }
+
+    .item1 form input {
+        /* margin: 3rem; */
+        font-size: 1rem;
+        /* border: none; */
+        max-width: 80%;
+        background-color: rgb(244, 241, 241);
+    }
+
+    .item1 form {
+        /* margin: 0rem; */
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .item2 {
+        display: grid;
+        grid-template-rows: 7fr 1fr;
+    }
+    .spin-btn{
+        padding: 0.5rem 2rem;
+        border-radius: 1rem;
+    }
+    .content {
+        background-color: rgb(244, 241, 241);
+        /* border: 0.2rem solid black; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .spin {
+        background-color: rgb(188, 188, 188);
+    }
+
+    .player {
+        justify-items: center;
+        text-align: center;
+        border-radius: 1rem;
+        border: 0.3rem solid beige;
+        padding-top: 15%;
+        font-size: 3rem;
+    }
+
+    .spin-div {
+        margin: 1rem 45%;
+        /* border: 2px solid black;
+        border-radius: 1rem;
+        cursor: pointer;
+        text-align: center; */
+    }
+
+    .spin-button {
+        font-size: 2rem;
+        border: none;
+        border-radius: 1rem;
+        padding: 0.5rem 2rem;
+        box-shadow: 1rem 1rem 1rem rgba(33, 32, 34, 0.185);
+    }
+
+    .submit-btn {
+        padding: 0rem 4rem;
+        border-radius: 1rem;
+    }
+
+    @media (min-width:381px),
+    (max-width:600px) {
+
+        .container {
+            display: block;
+            max-width: 100vw;
+        }
+
+        .player {
+
+            font-size: 2rem;
+        }
+
+        .item1 form input {
+            margin: 1rem;
+            font-size: 2rem;
+            /* border: none; */
+            background-color: rgb(244, 241, 241);
+        }
+    }
+
+    @media (max-width:380px) {
+        html {
+            font-size: 12px;
+        }
+
+        .container {
+            display: inline;
+            max-width: 100vw;
+        }
+
+        .player {
+
+            font-size: 2rem;
+        }
+
+        .item1 form input {
+            margin: 1rem;
+            font-size: 2rem;
+            max-width: 14rem;
+
+            background-color: rgb(244, 241, 241);
+        }
+    }
+</style>
+
+</html>
