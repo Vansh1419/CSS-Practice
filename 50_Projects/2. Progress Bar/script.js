@@ -10,7 +10,7 @@ let counter1 = 1;
 // console.log(activeCircle)
 buttons.addEventListener("click", (e) => {
     console.log(e)
-    if (e.originalTarget.classList.contains("next")) {
+    if (e.target.classList.contains("next")) {
         counter1++
         if(counter1>circles.length){
             counter1=circles.length
@@ -19,7 +19,7 @@ buttons.addEventListener("click", (e) => {
         let marking = ((counter1 - 1) / (circles.length - 1)) * 100
         activeProgressBar.style.width = `${marking}%`
     }
-    if (e.originalTarget.classList.contains("prev")) {
+    if (e.target.classList.contains("prev")) {
         counter1--
         if(counter1<1){
             counter1=1
