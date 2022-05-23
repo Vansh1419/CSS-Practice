@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: aqua;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icon {
+    height: 4rem;
+    width: 4rem;
+    padding:  0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+
+}
+.icon svg{
+    height: 1.4rem;
+    width: 1.4rem;
+}
+
+input {
+    height: 4rem;
+    width: 34rem;
+    padding: 2rem;
+    font-size: 2rem ;
+    border: none;
+    transition: all 0.5s ease-out;
+}
+.active{
+    width: 0;
+    /* opacity: 0; */
+    padding: 0;
+    margin: 0;
+
+}

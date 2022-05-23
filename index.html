@@ -8,10 +8,19 @@
     <title>CSS Practice</title>
 </head>
 
-<body>
+<body><div class="container">
+
     <button><a href="./GRID/Time table/index.html">GRID (timetable)</a></button>
     <button><a href="./truth_n_dare/index.html">Truth and dare</a></button>
-    <button><a href="./50_Projects/Expanding Cards/index.html">Expanding Card(Project 1)</a></button>
+    <button><a href="./50_Projects/1. Expanding Cards/index.html">Expanding Card</a></button>
+    <button><a href="./50_Projects/2. Progress Bar/index.html">Progress Bar</a></button>
+    <button><a href="./50_Projects/3. Rotating Navigation/index.html">Rotating Navigation</a></button>
+    <button><a href="./50_Projects/4. Hidden Search Bar/index.html">Hidden Search Bar</a></button>
+    <button><a href="./50_Projects/5. Blurry Loading/index.html">Blurry Loader</a></button>
+    <button><a href="./50_Projects/6. Scroll Animation/index.html">Scroll Animation</a></button>
+    <button><a href="./50_Projects/7. Split Landing Page/index.html">Split Landing Page</a></button>
+    <button><a href="./50_Projects/8. Wave Form Animation/index.html">Wave Form animation</a></button>
+</div>
 </body>
 <style>
     * {
@@ -19,14 +28,22 @@
         padding: 0;
         box-sizing: border-box;
     }
+    .container{
+        display: grid;
 
+        grid-template-columns:repeat(3,1fr) ;
+    }
     button {
-        margin: 5rem;
+        background-color: aqua;
+        color: black;
+        margin: 1rem;
+        text-decoration: none;
+        
     }
 
     a {
         padding: 3rem;
-        font-size: 4rem;
+        font-size: 2rem;
     }
 </style>
 

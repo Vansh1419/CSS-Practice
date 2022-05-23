@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    background-color: rgb(238, 230, 230);
+    overflow-x: hidden;
+}
+
+.body {
+    transform-origin: top left;
+    transform: rotateZ(0deg);
+    transition: transform 0.25s ease-in-out;
+
+}
+
+.content {
+    width: 80vw;
+    margin: auto;
+}
+
+.active {
+    transform: rotateZ(-10deg);
+    width: 80vw;
+
+    margin: auto;
+}
+
+.content img {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.content p {
+    margin: 2rem 0rem;
+}
+
+.content h3 {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.content h1 {
+    font-size: 3rem;
+}
+
+.icons {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: translate(-50%,-50%); */
+    top: 0rem;
+    /* cursor: pointer; */
+    left: 0rem;
+    height: 6rem;
+    width: 6rem;
+    border-bottom-right-radius: 100%;
+    background-color: aqua;
+}
+.icon2 button{
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+}
+.icons .line {
+    height: 0.4rem;
+    width: 2rem;
+    margin: 0.2rem;
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 4rem rgba(82, 77, 77, 0.34);
+    transform: translate(-50%, -50%);
+    /* position: fixed;
+    top: 2rem;
+    left: 2rem; */
+    position: relative;
+    top: 3px;
+    left: 16px;
+    border-radius: 2rem;
+
+}
+
+nav {
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+    left: -100px;
+    display: flex;
+    flex-direction: column;
+    transition: left 0.25s ease-in-out;
+    /* background-color: antiquewhite; */
+}
+
+nav.activated {
+    left: 0rem;
+}
+
+.nav-icons {
+    margin: 0.5rem 1rem;
+}
+
+.about {
+    padding: 0 20px;
+}
+
+.contact {
+    padding: 0 30px;
+}
+
+.icon {
+    height: 1.14rem;
+    width: 1.14rem;
+    
+}
+
+.lines {
+    height: 0.4rem;
+    background-color: rebeccapurple;
+    width: 2rem;
+    margin: 0.2rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.icon .line1 {
+    top: 0px;
+    left: 0px;
+    transform: rotateZ(45deg);
+}
+
+.icon .line2 {
+    position: relative;
+    top: -8px;
+    left: 0px;
+    transform: rotateZ(-45deg);
+}

@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 100vh;
+    flex-direction: column;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    z-index: -1;
+    height: 4px;
+    background-color: rgb(176, 176, 176);
+    width: 100%;
+}
+.width{
+    width: 30vw;
+}
+.circles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-50%);
+    
+}
+.circle{
+    padding: 1px 3px;
+    box-shadow: 1rem 1rem 3rem rgba(93, 235, 243, 0.382);
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size:  2rem;
+    border-radius: 50%;
+    border: 3px solid rgb(176, 176, 176);
+}
+.buttons{
+    height: 30vh;
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    margin: auto;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    background-color: aqua;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1rem 1rem 3rem rgba(2, 2, 2, 0.382);
+}
+.next{
+    
+}
+.prev{
+    cursor: not-allowed;
+}
+.button:disabled{
+    background-color: rgb(176, 176, 176);
+}
+.activated{
+    border: 3px solid aqua;
+}
+.active{
+    z-index: 1;
+    height: 4px;
+    background-color: aqua;
+    width: 0%;
+}
