@@ -31,8 +31,8 @@
 .circle{
     padding: 1px 3px;
     box-shadow: 1rem 1rem 3rem rgba(93, 235, 243, 0.382);
-    height: 4rem;
-    width: 4rem;
+    height: 2rem;
+    width: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
