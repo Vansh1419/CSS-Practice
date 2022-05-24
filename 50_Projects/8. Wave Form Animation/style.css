@@ -74,18 +74,92 @@ label #btn {
 h2{
     font-size: 1rem;
 }
-.form-info .c1 {
+/* .form-info .c1{
     position: absolute;
     top: 41%;
+    left: 30%;
+    transition: top 0.2s ease;
+} */
+.c1 .E{
+    position: absolute;
+    top: 40%;
+    left: 42%;
+    transition: top 0.2s ease;
+}
+.c1 .m{
+    position: absolute;
+    top: 40%;
+    left: 42.7%;
+    transition: top 0.2s ease;
+}
+.c1 .a{
+    position: absolute;
+    top: 40%;
+    left: 43.6%;
+    transition: top 0.2s ease;
+}
+.c1 .i{
+    position: absolute;
+    top: 40%;
+    left: 44.2%;
+    transition: top 0.2s ease;
+}
+.c1 .l{
+    position: absolute;
+    top: 40%;
+    left: 44.5%;
     transition: top 0.2s ease;
 }
 .form-info .jump1 {
     top: 37%;
 } 
 
-.form-info .c2 {
+.c2 .P{
     position: absolute;
     top: 50%;
+    left: 42%;
+    transition: top 0.2s ease;
+}
+.c2 .a1{
+    position: absolute;
+    top: 50%;
+    left: 42.5%;
+    transition: top 0.2s ease;
+}
+.c2 .s1{
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transition: top 0.2s ease;
+}
+.c2 .s2{
+    position: absolute;
+    top: 50%;
+    left: 43.5%;
+    transition: top 0.2s ease;
+}
+.c2 .w{
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    transition: top 0.2s ease;
+}
+.c2 .o{
+    position: absolute;
+    top: 50%;
+    left: 44.5%;
+    transition: top 0.2s ease;
+}
+.c2 .r{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transition: top 0.2s ease;
+}
+.c2 .d{
+    position: fixed;
+    top: 50%;
+    left: 45.5%;
     transition: top 0.2s ease;
 }
 .form-info .jump2 {
